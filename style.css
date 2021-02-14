@@ -99,6 +99,7 @@ background-position: top;
     padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 50px;
+    display: block;
 }
 
 .food .text h4 {
@@ -175,7 +176,9 @@ margin-right: auto;
 .logos {
 background: #FFF;
 color: #FE5504;
-padding: 50px;
+overflow: hidden;
+padding-top: 40px;
+padding-bottom: 60px;
 }
 
 .logos p {
@@ -183,16 +186,29 @@ padding: 50px;
     padding-bottom: 60px;
 }
 
+.logos div {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .logos img {
     width: 150px;
     margin-right: 50px;
+    display: block;
+    float: left;
+    
 }
 
-.logos div {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.logos img:last-child {
+width: 225px;
+margin-top: 10px;
+margin-right: 0px;
 }
+
+
+
 
 footer {
     overflow: hidden;
@@ -221,6 +237,158 @@ footer p {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 35px;
+}
+
+}
+
+    
+ @media (max-width: 969px) {
+
+    body {
+        font-family: 'Work Sans';
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        float: none;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    header nav {
+        float: none;
+        font-size: 16px;
+    }
+
+    header nav a {
+        text-transform: capitalize;
+    }
+
+    .splash {
+        background-size: cover;
+    background-position: top;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    
+    .splash h2 {
+        font-size: 50px;
+        line-height: 1.1;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    
+    }
+
+    .about {
+        padding-top: 40px;
+    }
+    .about p {
+        font-size: 18px;
+        line-height: 1.2;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .food {
+        text-align: center;
+        max-height: none;
+        padding-bottom: 65px;
+    }
+
+    .food .text {
+        float: none;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .food .text h4 {
+        font-size: 36px;
+        text-align: center;
+        width: auto;
+    }
+
+    .food .text p {
+        font-size: 18px;
+        line-height: 1.2;
+        width: 90%;
+    }
+    
+    .food .image {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+
+    .quotes p {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+     }
+
+    @media (max-width: 755px) {
+
+    .images img {
+        width: 100%;
+        float: none;
+    }
+
+    .findus {
+        padding-bottom: 20%;
+        padding-top: 8%;
+    }
+    .findus div {
+        width: 100%;
+        float: none;
+
+    }
+
+    .findus img {
+    }
+
+    .findus p {
+        width: 300px;
+        padding-top: 0%;
+        font-size: 20px;
+    }
+
+.logos p {
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+
+.logos div {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logos {
+    padding-bottom: 200px;
+}
+
+.logos img {
+    float: none;
+    display: block;
+    margin-right: 0;
+    margin-top: 40px;
+}
+
+.logos img:last-child {
+    width: 225px;
+    margin-top: 40px;
+    margin-right: 0px;
 }
 
 }
